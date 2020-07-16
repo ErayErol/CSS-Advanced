@@ -1,0 +1,15 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    color: rgb(33, 33, 88);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
