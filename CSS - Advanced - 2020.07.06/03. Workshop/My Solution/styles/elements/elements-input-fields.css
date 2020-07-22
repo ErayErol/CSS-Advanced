@@ -1,0 +1,12 @@
+select {
+    width: 167px;
+    height: 44px;
+    background: #F8F8F8;
+    border: 1px solid #FF9100;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+#level {
+    width: 197px;
+}

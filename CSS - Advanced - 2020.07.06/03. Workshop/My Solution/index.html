@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop</title>
+
+    <link rel="stylesheet" href="styles/generic/generic-normalize.css">
+
+    <link rel="stylesheet" href="styles/settings/settings-typography.css">
+
+    <link rel="stylesheet" href="styles/objects/objects-containers.css">
+
+    <link rel="stylesheet" href="styles/elements/elements-links.css">
+    <link rel="stylesheet" href="styles/elements/elements-input-fields.css">
+
+    <link rel="stylesheet" href="styles/utilities/utilities-centered.css">
+    <link rel="stylesheet" href="styles/utilities/utilities-hidden.css">
+
+    <link rel="stylesheet" href="styles/components/components-button.css">
+    <link rel="stylesheet" href="styles/components/components-card.css">
+    <link rel="stylesheet" href="styles/components/components-filter.css">
+    <link rel="stylesheet" href="styles/components/components-header.css">
+    <link rel="stylesheet" href="styles/components/components-footer.css">
+    <link rel="stylesheet" href="styles/components/components-navigation.css">
+    <link rel="stylesheet" href="styles/components/components-program.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="navbar__container">
+                <nav class="navbar">
+                    <section class="navbar__arrow">
+                        <img src="./assets/icons/arrow-nav.svg" alt="Arrow-right">
+                    </section>
+                    <section class="navbar__logo">
+                        <img src="./assets/images/logo.png" alt="SoftUni Kids logo">
+                    </section>
+                    <section>
+                        <ul class="navbar__links">
+                            <li><a class="navbar__link" href="">обучения</a></li>
+                            <li><a class="navbar__link" href="">събития</a></li>
+                            <li><a class="navbar__link" href="">преподаватели</a></li>
+                            <li><a class="navbar__link" href="">блог</a></li>
+                            <li><a class="navbar__link" href="">контакти</a></li>
+                        </ul>
+                    </section>
+                    <section class="navbar__search">
+                        <img src="./assets/icons/search.png" alt="Search">
+                    </section>
+                    <button class="navbar__button button button--small">
+                        вход
+                    </button>
+                </nav>
+            </div>
+            <article class="header__info">
+                <section>
+                    <h2 class="header__title">Обучения</h2>
+                </section>
+                <section>
+                    <p class="header__text">
+                        At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a
+                        suscipit
+                        cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan, porta tellus
+                        commodo at. Augue ullamcorper suspendisse. Sit morbi risus
+                    </p>
+                </section>
+            </article>
+        </header>
+        <main>
+            <div class="filter__container">
+                <article class="filter">
+                    <section>
+                        <span>Филтър:</span>
+                    </section>
+                    <section class="filter__section filter__level">
+                        <img class="filter__section__img" src="./assets/icons/level.svg" alt="Level">
+                        <select name="Level" id="level">
+                            <option>Ниво</option>
+                            <option>Начинаещ</option>
+                            <option>Напреднал</option>
+                        </select>
+                        <img class="filter__level__info" src="./assets/icons/info.svg" alt="Info">
+                    </section>
+                    <section class="filter__section filter__location">
+                        <img class="filter__section__img" src="./assets/icons/location.svg" alt="Location">
+                        <img class="filter__location__img__circle" src="./assets/icons/circle-over-location.svg"
+                            alt="Circle">
+                        <select name="Location" id="location">
+                            <option>Локация</option>
+                            <option>София</option>
+                            <option>Онлайн</option>
+                        </select>
+                    </section>
+                    <section class="filter__section filter__people">
+                        <img class="filter__section__img" src="./assets/icons/people.svg" alt="People">
+                        <select name="People" id="people">
+                            <option>Подходящ за</option>
+                            <option>Начинаещи</option>
+                            <option>Напреднали</option>
+                        </select>
+                    </section>
+                    <section class="filter__section filter__puzzle">
+                        <img class="filter__section__img" src="./assets/icons/puzzle.svg" alt="Puzzle">
+                        <select name="Puzzle" id="puzzle">
+                            <option>Вид</option>
+                            <option>Софтуер</option>
+                            <option>Хардуер</option>
+                        </select>
+                    </section>
+                </article>
+            </div>
+            <div class="cards_container">
+                <article class="cards">
+                    <section class="card">
+                        <section class="card__header">
+                            <div class="card__level">Начинаещ</div>
+                            <h3 class="card__title">Първи стъпки в програмирането</h3>
+                        </section>
+                        <section class="card__main">
+                            <div class="card__item card__start">
+                                <img src="./assets/icons/play.svg" alt="Play icon">
+                                <p>16 май 2020</p>
+                            </div>
+                            <div class="card__item card__time">
+                                <img src="./assets/icons/time.svg" alt="Time icon">
+                                <p>4 седмици</p>
+                            </div>
+                            <div class="card__item card__user">
+                                <img src="./assets/icons/user.svg" alt="User icon">
+                                <p>1-3 клас</p>
+                            </div>
+                            <div class="card__item card__location">
+                                <img src="./assets/icons/location-icon.svg" alt="Location icon">
+                                <p>София - жк. Изток</p>
+                            </div>
+                        </section>
+                        <section class="card__footer">
+                        </section>
+                    </section>
+                    <section class="card">
+                        <section class="card__header">
+                            <div class="card__level">Начинаещ</div>
+                            <h3 class="card__title">Първи стъпки в програмирането</h3>
+                        </section>
+                        <section class="card__main">
+                            
+                        </section>
+                        <section class="card__footer">
+                        </section>
+                    </section>
+                    <section class="card">
+                        <section class="card__header">
+                            <div class="card__level card__level--purple">средно-напреднал</div>
+                            <h3 class="card__title">Първи стъпки в програмирането</h3>
+                        </section>
+                        <section class="card__main">
+                            
+                        </section>
+                        <section class="card__footer">
+                        </section>
+                    </section>
+                </article>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

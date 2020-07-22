@@ -1,0 +1,38 @@
+.filter__container{
+    background-color: #F8F8F8;
+    height: 92px;
+}
+
+.filter{
+    margin: 0 75px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filter__section{
+    display: flex;
+}
+
+.filter__section__img{
+    margin-right: 20px;
+}
+
+.filter__level{
+    margin-left: 80px;
+}
+
+.filter__level__info{
+    margin-left: 10px;
+}
+
+.filter__location{
+    position: relative;
+}
+
+.filter__location__img__circle{
+    position: absolute;
+    left: 6px;
+    bottom: 18px;
+}
