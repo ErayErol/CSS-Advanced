@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
-    font-family: 'LatoWeb';
-    src: url('/font/Lato/fonts/Lato-Regular.ttf') format('truetype');
+  font-family: 'LatoWeb';
+  src: url("/font/Lato/fonts/Lato-Regular.ttf") format("truetype");
 }
 
 html,
 * {
-    font-family: 'LatoWeb';
-    line-height: 16px;
-    font-style: normal;
+  font-family: 'LatoWeb';
+  line-height: 16px;
+  font-style: normal;
 }
 
 a {
-    font-weight: 600;
-    font-size: 13px;
+  font-weight: 600;
+  font-size: 13px;
 }
 
 h1,
@@ -23,49 +22,50 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Montserrat', sans-serif;
-    color: #FFFFFF;
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
 }
 
 h2 {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
 }
 
 h3 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 30px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+h5 {
+  font-family: 'LatoWeb';
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 p,
 button,
 option {
-    font-size: 16px;
-    line-height: 20px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 p {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 button {
-    font-weight: 800;
+  font-weight: 800;
 }
 
-span {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-}
-
-select {
-    color: #919191;
-}
-
-option{
-    color: #565656;
+option {
+  color: #565656;
 }

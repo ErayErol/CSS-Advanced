@@ -1,0 +1,78 @@
+@import "../settings/settings-colors.scss";
+
+.footer {
+    margin-top: 150px;
+    background-color: $grey-700;
+    border-top: 12px solid $grey-500;
+    height: 312px;
+    position: relative;
+
+    &__container {
+        display: flex;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: -3px;
+    }
+
+    &__items {
+        display: flex;
+        margin-bottom: 90px;
+        margin-top: 30px;
+    }
+
+    .margin-left {
+        margin-left: 320px;
+    }
+
+    .margin-left-second {
+        margin-left: 130px;
+    }
+
+    &__ul {
+        margin-left: 80px;
+    }
+
+    &__ul h5 {
+        width: 180px;
+    }
+
+    &__ul ul {
+        display: flex;
+        flex-flow: column wrap;
+        height: 140px;
+        padding: 0;
+    }
+
+    &__ul ul li {
+        list-style: none;
+        padding: 4px 12px;
+    }
+
+    &__ul ul li a {
+        text-decoration: none;
+        color: $grey-200;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: normal;
+    }
+
+    &__ul ul li a:hover {
+        cursor: pointer;
+        color: $primary-300;
+    }
+
+    &__social-media {
+        flex-flow: row !important;
+        height: 80px !important;
+    }
+
+    &__text {
+        color: $grey-500;
+    }
+
+    &__insta-icon {
+        color: $grey-200;
+    }
+}

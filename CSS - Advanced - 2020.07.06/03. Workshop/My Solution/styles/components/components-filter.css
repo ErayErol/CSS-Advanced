@@ -1,38 +1,52 @@
-.filter__container{
-    background-color: #F8F8F8;
-    height: 92px;
+.filter {
+  background-color: #F8F8F8;
 }
 
-.filter{
-    margin: 0 75px;
-    height: 92px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.filter .filter__container {
+  height: 92px;
 }
 
-.filter__section{
-    display: flex;
+.filter .filter__container .filter__title {
+  color: #565656;
 }
 
-.filter__section__img{
-    margin-right: 20px;
+.filter .filter__container .filter__label {
+  display: flex;
 }
 
-.filter__level{
-    margin-left: 80px;
+.filter .filter__container .filter__label__img {
+  margin-right: 20px;
 }
 
-.filter__level__info{
-    margin-left: 10px;
+.filter .filter__container .filter__label::after {
+  content: '';
+  background: url(../../assets/icons/arrow.svg) center no-repeat;
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  position: relative;
+  right: 30px;
+  top: 17px;
 }
 
-.filter__location{
-    position: relative;
+.filter .filter__container .filter__level {
+  margin-left: 80px;
 }
 
-.filter__location__img__circle{
-    position: absolute;
-    left: 6px;
-    bottom: 18px;
+.filter .filter__container .filter__level__info {
+  margin-left: 10px;
+}
+
+.filter .filter__container .filter__level::after {
+  right: 60px;
+}
+
+.filter .filter__container .filter__location {
+  position: relative;
+}
+
+.filter .filter__container .filter__location__img__circle {
+  position: absolute;
+  left: 6px;
+  bottom: 18px;
 }
