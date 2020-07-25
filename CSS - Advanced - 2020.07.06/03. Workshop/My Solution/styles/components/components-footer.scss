@@ -1,78 +1,109 @@
 @import "../settings/settings-colors.scss";
 
 .footer {
-    margin-top: 150px;
-    background-color: $grey-700;
-    border-top: 12px solid $grey-500;
-    height: 312px;
     position: relative;
 
     &__container {
+        border-top: 12px solid $grey-500;
         display: flex;
-    }
-
-    &__img {
-        position: absolute;
-        bottom: -3px;
-    }
-
-    &__items {
+        height: 312px;
+        background-color: $grey-700;
         display: flex;
-        margin-bottom: 90px;
-        margin-top: 30px;
+        justify-content: center;
+        align-items: center;
     }
 
-    .margin-left {
-        margin-left: 320px;
+    &__menu {
+        margin: 44px 0;
+        margin-left: 373px;
+        width: 77%;
     }
 
-    .margin-left-second {
-        margin-left: 130px;
-    }
-
-    &__ul {
-        margin-left: 80px;
-    }
-
-    &__ul h5 {
-        width: 180px;
-    }
-
-    &__ul ul {
+    &__list-item {
+        line-height: 19px;
+        margin-bottom: 12px;
         display: flex;
-        flex-flow: column wrap;
-        height: 140px;
-        padding: 0;
+        align-items: center;
     }
 
-    &__ul ul li {
-        list-style: none;
-        padding: 4px 12px;
-    }
-
-    &__ul ul li a {
-        text-decoration: none;
-        color: $grey-200;
+    &__link {
+        display: flex;
+        justify-content: flex-start;
         font-size: 16px;
         line-height: 19px;
+        color: #E6E6E6;
         font-weight: normal;
+        width: 164px;
+        text-decoration: none;
+
+        &:hover {
+            color: $primary-300;
+        }
     }
 
-    &__ul ul li a:hover {
-        cursor: pointer;
-        color: $primary-300;
+    &__heading {
+        margin-bottom: 0;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        color: $white-color;
     }
 
-    &__social-media {
-        flex-flow: row !important;
-        height: 80px !important;
-    }
-
-    &__text {
-        color: $grey-500;
-    }
-
-    &__insta-icon {
+    &__icon {
         color: $grey-200;
+        font-size: 28px;
+        margin-right: 30px;
+        margin-bottom: 48px;
+
+        &:hover {
+            color: $primary-300;
+        }
+    }
+
+    .rights {
+        max-width: 177px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        display: flex;
+        align-items: center;
+        color: $grey-500;
+        width: 200px;
+    }
+}
+
+.first-section__second-ul{
+    margin-left: -50px;
+}
+
+.dismissable {
+    position: absolute;
+    bottom: 0;
+    left: 75px;
+}
+
+.row-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.column-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+
+    &--nomargin {
+        margin-right: 0;
+    }
+}
+
+.footer-container {
+    margin-right: 85px;
+
+    &--kids {
+        min-width: 256px;
     }
 }

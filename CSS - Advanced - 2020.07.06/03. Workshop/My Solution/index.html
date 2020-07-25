@@ -5,26 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop</title>
-
-    <link rel="stylesheet" href="styles/generic/generic-normalize.css">
-
-    <link rel="stylesheet" href="styles/settings/settings-typography.css">
-
-    <link rel="stylesheet" href="styles/objects/objects-containers.css">
-
-    <link rel="stylesheet" href="styles/elements/elements-links.css">
-    <link rel="stylesheet" href="styles/elements/elements-input-fields.css">
-
-    <link rel="stylesheet" href="styles/utilities/utilities-centered.css">
-    <link rel="stylesheet" href="styles/utilities/utilities-hidden.css">
-
-    <link rel="stylesheet" href="styles/components/components-button.css">
-    <link rel="stylesheet" href="styles/components/components-card.css">
-    <link rel="stylesheet" href="styles/components/components-filter.css">
-    <link rel="stylesheet" href="styles/components/components-header.css">
-    <link rel="stylesheet" href="styles/components/components-footer.css">
-    <link rel="stylesheet" href="styles/components/components-navigation.css">
-    <link rel="stylesheet" href="styles/components/components-program.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -125,19 +106,19 @@
                         <section class="card__main">
                             <div class="card__item card__start">
                                 <img src="./assets/icons/play.svg" alt="Play icon">
-                                <p>16 май 2020</p>
+                                <span>16 май 2020</span>
                             </div>
                             <div class="card__item card__time">
                                 <img src="./assets/icons/time.svg" alt="Time icon">
-                                <p>4 седмици</p>
+                                <span>4 седмици</span>
                             </div>
                             <div class="card__item card__user">
                                 <img src="./assets/icons/user.svg" alt="User icon">
-                                <p>1-3 клас</p>
+                                <span>1-3 клас</span>
                             </div>
                             <div class="card__item card__location">
                                 <img src="./assets/icons/location-icon.svg" alt="Location icon">
-                                <p>София - жк. Изток</p>
+                                <span>София - жк. Изток</span>
                             </div>
                         </section>
                         <section class="card__footer page-margin">
@@ -145,23 +126,24 @@
                             <button class="button button--card">към обучението</button>
                         </section>
                     </section>
+
                     <section class="card">
                         <section class="card__header card__header--green">
                             <div class="card__level">Начинаещ</div>
                             <h3 class="card__title">Първи стъпки в програмирането</h3>
                         </section>
-                        <section class="card__main">
+                        <section class="card__main card__main__centered">
                             <div class="card__item card__time">
                                 <img src="./assets/icons/time.svg" alt="Time icon">
-                                <p>4 седмици</p>
+                                <span>4 седмици</span>
                             </div>
                             <div class="card__item card__user">
                                 <img src="./assets/icons/user.svg" alt="User icon">
-                                <p>2-3 клас</p>
+                                <span>2-3 клас</span>
                             </div>
                             <div class="card__item card__location">
                                 <img src="./assets/icons/location-icon.svg" alt="Location icon">
-                                <p>Онлайн</p>
+                                <span>Онлайн</span>
                             </div>
                         </section>
                         <section class="card__footer page-margin">
@@ -169,23 +151,24 @@
                             <button class="button button--card">към обучението</button>
                         </section>
                     </section>
+
                     <section class="card">
                         <section class="card__header">
                             <div class="card__level card__level--violet">средно-напреднал</div>
                             <h3 class="card__title">Първи стъпки в програмирането</h3>
                         </section>
-                        <section class="card__main">
+                        <section class="card__main card__main__centered">
                             <div class="card__item card__time">
                                 <img src="./assets/icons/time.svg" alt="Time icon">
-                                <p>4 седмици</p>
+                                <span>4 седмици</span>
                             </div>
                             <div class="card__item card__user">
                                 <img src="./assets/icons/user.svg" alt="User icon">
-                                <p>1-3 клас</p>
+                                <span>1-3 клас</span>
                             </div>
                             <div class="card__item card__location">
                                 <img src="./assets/icons/location-icon.svg" alt="Location icon">
-                                <p>гр. София, SoftUni - жк. Изток</p>
+                                <span>гр. София, SoftUni - жк. Изток</span>
                             </div>
                         </section>
                         <section class="card__footer page-margin">
@@ -253,52 +236,90 @@
         </main>
 
         <footer class="footer">
-            <div class="footer__container page-margin">
-                <section class="footer__img">
-                    <img src="./assets/icons/pikachu-one-eye.svg" alt="Pikachu one eye">
-                </section>
-                <div class="footer__items">
-                    <section class="footer__ul margin-left">
-                        <h5>Softuni Kids</h5>
-                        <ul>
-                            <li><a href="">Начало</a></li>
-                            <li><a href="">Летни академии</a></li>
-                            <li><a href="">Преподаватели</a></li>
-                            <li><a href="">Блог</a></li>
-                            <li><a href="">Контакти</a></li>
-                            <li><a href="">Общи условия</a></li>
-                            <li><a href="">Лични данни</a></li>
-                        </ul>
-                    </section>
-                    <section class="footer__ul margin-left-second">
-                        <h5>Всички обучения</h5>
-                        <ul>
-                            <li><a href="">Курсове</a></li>
-                            <li><a href="">Събития</a></li>
-                        </ul>
-                    </section>
-                    <section class="footer__ul">
-                        <h5>Всички инициативи</h5>
-                        <ul>
-                            <li><a href="">SoftUni University</a></li>
-                            <li><a href="">SoftUni Digital</a></li>
-                            <li><a href="">SoftUni Creative</a></li>
-                            <li><a href="">SoftUni Svetlina</a></li>
-                            <li><a href="">SoftUni Foundation</a></li>
-                        </ul>
-                    </section>
-                    <section class="footer__ul">
-                        <h5>Намери ни</h5>
-                        <ul class="footer__social-media">
-                            <li><a href=""><img src="./assets/icons/fb-icon.svg" alt="Facebook icon"></a></li>
-                            <li><a href=""><img class="footer__insta-icon" src="./assets/icons/insta-icon.svg" alt="Instagram icon"></a></li>
-                        </ul>
-                        <div class="footer__text">
-                            © 2016-2020 - SoftUni Kids. All Rights Reserved.
+            <section class="footer__container">
+                <div class="footer__menu row-container">
+                    <div class="column-container footer-container footer-container--kids">
+                        <h5 class="footer__heading">Softuni Kids</h5>
+                        <div class="row-container">
+                            <ul class="column-container column-container--nomargin">
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Начало</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Летни академии</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Преподаватели</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Блог</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Контакти</a>
+                                </li>
+                            </ul>
+                            <ul class="first-section__second-ul">
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Общи условия</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Лични данни</a>
+                                </li>
+                            </ul>
                         </div>
-                    </section>
+                    </div>
+                    <div class="column-container footer-container">
+                        <h5 class="footer__heading">Всички обучения</h5>
+                        <div class="row-container">
+                            <ul class="column-container">
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Курсове</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Събития</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column-container footer-container">
+                        <h5 class="footer__heading">Всички инициативи</h5>
+                        <div class="row-container">
+                            <ul class="column-container">
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">Software University</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">SoftUni Digital</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">SoftUni Creative</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">SoftUni Svetlina</a>
+                                </li>
+                                <li class="footer__list-item">
+                                    <a class="footer__link" href="#">SoftUni Foundation</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="column-container footer-container">
+                        <h5 class="footer__heading">Намери ни</h5>
+                        <div class="row-container">
+                            <ul class="column-container">
+                                <li class="footer__list-item">
+                                    <i class="fa fa-facebook-square footer__icon"></i><i
+                                        class="fa fa-instagram footer__icon"></i>
+                                </li>
+                                <li class="footer__list-item">
+                                    <p class="rights">© 2016-2020 - SoftUni Kids. All Rights Reserved.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
+            <img class="dismissable" src="./assets/icons/pikachu-one-eye.svg" alt="pikachu">
         </footer>
     </div>
 </body>

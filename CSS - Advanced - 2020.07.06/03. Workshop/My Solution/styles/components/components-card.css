@@ -49,23 +49,30 @@
 .cards__container .card .card__main {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  padding-top: 24px;
+  padding-top: 19px;
   padding-bottom: 24px;
+  margin: 0 30px;
+  height: 104px;
+  align-items: center;
 }
 
 .cards__container .card .card__main .card__item {
   display: flex;
-  margin: -12px 16px;
+  margin: 5px 15px;
+  align-items: center;
 }
 
-.cards__container .card .card__main .card__item p {
-  margin-left: 14px;
+.cards__container .card .card__main .card__item span {
+  margin-left: 15px;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   color: #565656;
+}
+
+.cards__container .card .card__main__centered {
+  justify-content: center;
 }
 
 .cards__container .card .card__footer {
