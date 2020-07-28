@@ -1,0 +1,17 @@
+@media screen and (min-width: 500px) {
+    html{
+        font-size: var(--small-font-size);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    html{
+        font-size: var(--medium-font-size);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    html{
+        font-size: var(--large-font-size);
+    }
+}

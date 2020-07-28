@@ -1,0 +1,61 @@
+html {
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+}
+
+:root {
+    --animation-delay: 0.15s;
+}
+
+ul {
+    position: absolute;
+    top: 30%;
+    left: 45%;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 0.5em;
+    transform: translateX(-3em);
+    opacity: 0;
+    animation-name: appear;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards; /* after animation is done, changed/added css styles remain*/
+}
+
+@keyframes appear {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+
+/* Every li element starts its animation after longer and longer, creating the effect*/
+li:nth-child(1) {
+    animation-delay: var(--animation-delay); /* start animation after set time*/
+}
+
+li:nth-child(2) {
+    animation-delay: calc(2 * var(--animation-delay));
+}
+
+li:nth-child(3) {
+    animation-delay: calc(3 * var(--animation-delay));
+}
+
+li:nth-child(4) {
+    animation-delay: calc(4 * var(--animation-delay));
+}
+
+li:nth-child(5) {
+    animation-delay: calc(5 * var(--animation-delay));
+}
+
+li:nth-child(6) {
+    animation-delay: calc(6 * var(--animation-delay));
+}
+
+li:nth-child(7) {
+    animation-delay: calc(7 * var(--animation-delay));
+}

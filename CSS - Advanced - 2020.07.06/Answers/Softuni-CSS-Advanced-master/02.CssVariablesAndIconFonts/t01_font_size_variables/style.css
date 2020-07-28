@@ -1,0 +1,21 @@
+@import "variables.css";
+@import "layout.css";
+
+html {
+    font-family: var(--font-family-page);
+}
+
+p {
+    font-size: var(--font-size-paragraph);
+}
+
+h1 {
+    font-size: var(--font-size-heading-one);
+}
+
+h3 {
+    font-size: var(--font-size-heading-three);
+    font-style: var(--font-style-heading-three);
+}
+
+

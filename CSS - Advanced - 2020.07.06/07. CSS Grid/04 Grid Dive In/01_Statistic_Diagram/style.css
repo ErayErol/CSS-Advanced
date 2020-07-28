@@ -1,0 +1,67 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    max-width: 70em;
+    margin: 5em auto;
+}
+
+.diagram {
+    display: grid;
+    grid-template-columns: repeat(7, 70px);
+    grid-template-rows: 100px;
+    gap: 0;
+    justify-content: center;
+    align-items: end;
+
+}
+
+.item {
+    color: black;
+    font-size: 12px;
+    padding: 0.3em;
+}
+
+.a {
+    background: rgb(159 251 214);
+    height: 20px;
+}
+
+.b {
+    background: yellow;
+    height: 50px;
+}
+
+.c {
+    background: rgb(246	195	203);
+    height: 30px;
+}
+
+.d {
+    background: rgb(131	224	229);
+    height: 70px;
+}
+
+.e {
+    background: rgb(212	241	144);
+    height: 100px;
+}
+
+.f {
+    background: rgb(107	44	199	);
+    height: 80px;
+}
+
+.g {
+    background: rgb(234	145	58);
+    height: 25px;
+}

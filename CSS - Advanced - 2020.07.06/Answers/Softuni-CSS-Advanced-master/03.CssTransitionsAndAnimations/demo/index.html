@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .box:hover {
+            animation: changeColor infinite 5s;
+        }
+
+        @keyframes changeColor {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: orange;
+            }
+
+            50% {
+                background-color: white;
+            }
+
+            75% {
+                background-color: deepskyblue;
+            }
+
+            100% {
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+
+</div>
+
+</body>
+</html>

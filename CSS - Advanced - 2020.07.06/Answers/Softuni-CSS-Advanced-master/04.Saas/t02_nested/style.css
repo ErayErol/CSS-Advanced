@@ -1,0 +1,18 @@
+.basic-table {
+  font-family: Verdana, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  margin: 0 auto; }
+  .basic-table td, .basic-table th {
+    border: 0.15em solid #ddd;
+    padding: 0.5em; }
+  .basic-table tr:nth-child(2n) {
+    background-color: #f2f2f2; }
+  .basic-table tbody tr:hover {
+    background-color: #ddd; }
+  .basic-table th {
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
+    text-align: left;
+    background-color: #4CAF50;
+    color: white; }

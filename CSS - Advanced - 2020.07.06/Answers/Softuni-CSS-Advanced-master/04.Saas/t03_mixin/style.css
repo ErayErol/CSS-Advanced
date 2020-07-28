@@ -1,0 +1,14 @@
+@media (max-width: 320px) {
+  html {
+    font-size: 10px; } }
+
+@media (max-width: null) {
+  html {
+    font-size: 14px; } }
+
+@media (min-width: 700px) {
+  html {
+    font-size: 18px; } }
+
+h1 {
+  font-size: 1.8em; }

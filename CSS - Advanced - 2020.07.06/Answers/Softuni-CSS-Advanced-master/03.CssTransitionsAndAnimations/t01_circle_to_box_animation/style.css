@@ -1,0 +1,29 @@
+:root {
+    --circle-width: 10rem;
+    --circle-height: var(--circle-width);
+}
+
+.circle {
+    width: var(--circle-width);
+    height: var(--circle-height);
+    background-color: red;
+    border-radius: 100%;
+    /*
+    use the specific animation,
+    take 1.5 seconds to complete it,
+    do it an infinite number of times,
+    revert back to original with reversed animation
+    */
+    animation: mutate 2.5s infinite alternate;
+    position: absolute;
+    top: calc(50% - (var(--circle-height) / 2));
+    left: calc(50% - (var(--circle-width) / 2));
+}
+
+@keyframes mutate {
+    to { /* when animation is done, these styles will be applied */
+        transform: scale(1.5); /* make it bigger*/
+        border-radius: 0;
+        background-color: orange;
+    }
+}

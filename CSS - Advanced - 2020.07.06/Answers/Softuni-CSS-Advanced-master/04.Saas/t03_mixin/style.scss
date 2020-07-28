@@ -1,0 +1,35 @@
+$device-widths: (phone-max: 320px, tablet-min: 321px, desktop-min: 700px);
+
+@mixin phone-styles {
+  html {
+    font-size: 10px;
+  }
+}
+
+@mixin tablet-styles {
+  html {
+    font-size: 14px;
+  }
+}
+
+@mixin desktop-styles {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: map_get($device-widths, phone-max)) {
+  @include phone-styles;
+}
+
+@media (max-width: map_get($device-widths, tablet-max)) {
+  @include tablet-styles;
+}
+
+@media (min-width: map_get($device-widths, desktop-min)) {
+  @include desktop-styles;
+}
+
+h1 {
+  font-size: 1.8em;
+}

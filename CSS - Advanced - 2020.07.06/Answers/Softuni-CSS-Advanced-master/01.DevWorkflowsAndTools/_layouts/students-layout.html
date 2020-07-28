@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+{% for student in site.data.students %}
+    <h2>Name: {{student.name}}</h2>
+    <h2>Grade: {{student.grade}}</h2>
+    <hr/>
+{% endfor %}
+
+<img src="{{site.static_files.being-a-programmer.path}}">
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+@import "reset.css";
+@import "variables.css";
+@import "layout.css";
+@import "typography.css";
+
+.page-section {
+    border-color: var(--page-secondary-color);
+    border-radius: 0.33rem;
+    border-width: 0.10rem;
+    border-style: solid;
+}
+
+.page-section li {
+    list-style: none;
+}
+
+a.button {
+    font-weight: bold;
+    display: inline-block;
+    padding: 0.40em 1em;
+    background-color: var(--page-secondary-color);
+    text-decoration: none;
+    border-radius: 0.35em;
+    color: var(--color-white);
+}
+
+a.button:hover {
+    background-color: var(--page-main-color);
+    color: var(--page-secondary-color);
+}

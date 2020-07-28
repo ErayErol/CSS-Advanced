@@ -1,0 +1,29 @@
+body{
+    max-width: 50em;
+    margin: 5em auto;
+}
+
+h1, h3, p{
+    font-family: Arial, sans-serif;
+}
+
+h1{
+    font-size: var(--h1-font-size);
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    margin-top: 1.2em;
+    margin-bottom: 0.5em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+p {
+    font-size: var(--p-font-size);
+    margin-bottom: 1em;
+    margin-top: 0.5em;
+}
+

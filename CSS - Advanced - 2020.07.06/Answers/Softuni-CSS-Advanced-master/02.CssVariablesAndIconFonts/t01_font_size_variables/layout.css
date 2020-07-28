@@ -1,0 +1,8 @@
+.page {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.page > h1 {
+    text-align: center;
+}

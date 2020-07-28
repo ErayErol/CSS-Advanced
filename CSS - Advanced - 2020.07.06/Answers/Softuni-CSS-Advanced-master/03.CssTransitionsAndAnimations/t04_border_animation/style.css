@@ -1,0 +1,34 @@
+:root {
+    --padding-button-vertical: 0.25em;
+    --padding-button-horizontal: 0.5em;
+
+    --border-radius-width-default: 0.20em;
+    --border-radius-width-hover: 0.40em;
+}
+
+body {
+    background-color: rgb(230, 230, 230);
+}
+
+.button-container {
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+
+.button {
+    text-decoration: none;
+    padding: var(--padding-button-vertical) var(--padding-button-horizontal);
+    border: var(--border-radius-width-default) solid darkblue;
+    display: inline-block;
+    background-color: white;
+    transition: border-width 1s, padding 1s;
+}
+
+/*
+There has to be an easier way to do this
+ */
+.button:hover {
+    border-width: var(--border-radius-width-hover);
+    padding: calc(var(--padding-button-vertical) - (calc(var(--border-radius-width-hover) - var(--border-radius-width-default)))) calc(var(--padding-button-horizontal) - (calc(var(--border-radius-width-hover) - var(--border-radius-width-default))))
+}

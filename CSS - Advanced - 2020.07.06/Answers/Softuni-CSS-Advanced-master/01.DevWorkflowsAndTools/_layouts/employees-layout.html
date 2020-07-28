@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+</head>
+<body>
+
+{% for employee in site.employees %}
+    <h2>{{ employee.name }} - {{ employee.position }}</h2>
+    {% for skill in employee.skills %}
+        <p>Skill - {{skill}}</p>
+    {% endfor %}
+{% endfor %}
+
+</body>
+</html>

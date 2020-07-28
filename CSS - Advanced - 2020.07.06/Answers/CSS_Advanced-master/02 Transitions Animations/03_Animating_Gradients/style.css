@@ -1,0 +1,43 @@
+@import url('../reset.css');
+
+html {
+    background: #cccccc;
+    font-family: Arial, sans-serif ;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 5em auto;
+    max-width: 40em;
+}
+
+body div.element{
+    position: relative;
+    margin: 5em auto;
+    width: 500px;
+    height: 300px;
+    background: white;
+}
+
+body div.element:before{
+    position: absolute;
+    content: '';
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: linear-gradient(orange, #e5daa5);
+    z-index: 100;
+}
+
+body div.element:after{
+    position: absolute;
+    content: '';
+    top: 0; right: 0; bottom: 0; left: 0;
+    background-image: linear-gradient(#90a4ac, white);
+    z-index: 105;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+body div.element:hover:after{
+    opacity: 0;
+}

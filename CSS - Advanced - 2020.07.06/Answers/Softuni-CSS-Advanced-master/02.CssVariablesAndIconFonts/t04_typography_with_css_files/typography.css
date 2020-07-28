@@ -1,0 +1,25 @@
+html {
+    font-family: Calibri, sans-serif;
+}
+
+html, h1, h2 {
+    line-height: 1.4em;
+}
+
+@media (min-width: 500px) {
+    html {
+        font-size: var(--font-size-500-px-display);
+    }
+}
+
+@media (min-width: 700px) {
+    html {
+        font-size: var(--font-size-700-px-display);
+    }
+}
+
+@media (min-width: 1600px) {
+    html {
+        font-size: var(--font-size-1600-px-display);
+    }
+}

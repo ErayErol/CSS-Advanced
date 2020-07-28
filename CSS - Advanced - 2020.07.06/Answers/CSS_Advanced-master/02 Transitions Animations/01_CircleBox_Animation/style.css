@@ -1,0 +1,37 @@
+@import url('../reset.css');
+
+html {
+    font-family: Arial, sans-serif ;
+    font-size: 15px;
+    line-height: 2;
+}
+
+body {
+    position: relative;
+    width: 100%;
+}
+
+.box {
+    position: absolute;
+    left: 50vw; top: 50vh;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        background: orange;
+        border-radius: 0;
+    }
+    50% {
+        background: red;
+        border-radius: 50%;
+    }
+    100% {
+        background: orange;
+        border-radius: 0;
+    }
+}

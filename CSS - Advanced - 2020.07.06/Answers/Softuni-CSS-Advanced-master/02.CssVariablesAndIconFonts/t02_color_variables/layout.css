@@ -1,0 +1,23 @@
+.page-section {
+    width: 70%;
+    margin: 3rem auto;
+    padding: 1.5rem;
+}
+
+.page-section > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.page-section > ul > li {
+    flex-basis: 27%;
+}
+
+.page-section h2 {
+    margin: 0 0 1.5em 0;
+}
+
+.page-section a.button {
+    margin: 2em 0 0 0;
+}

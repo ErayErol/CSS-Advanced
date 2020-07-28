@@ -1,0 +1,27 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.blog {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1em;
+    margin: 3em;
+}
+
+.blog > * {
+    padding: 1.25em;
+    background-color: black;
+    color: white;
+    border-radius: 0.15em;
+}
+
+.blog header, .blog footer {
+    grid-column: 1/-1;
+}
+
+.blog main {
+    grid-column: span 2;
+}

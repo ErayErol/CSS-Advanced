@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nested</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<table class="basic-table">
+    <thead>
+        <tr>
+            <th>Number</th>
+            <th>Name</th>
+            <th>Profession</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script>
+    const data = [
+        {
+            name: 'Aleksandar',
+            profession: 'Dev'
+        },
+        {
+            name: 'Kazuma',
+            profession: 'Advocate'
+        },
+        {
+            name: 'Peter',
+            profession: 'Accounting'
+        },
+    ];
+
+    const fragment = document.createDocumentFragment();
+    let counter = 0;
+
+    data.forEach(person => {
+        const tableRow = document.createElement('tr');
+
+        const numberTableDefinition = document.createElement('td');
+        numberTableDefinition.textContent = ++counter;
+
+        const nameTableDefinition = document.createElement('td');
+        nameTableDefinition.textContent = person.name;
+
+        const professionTableDefinition = document.createElement('td');
+        professionTableDefinition.textContent = person.profession;
+
+        tableRow.appendChild(numberTableDefinition);
+        tableRow.appendChild(nameTableDefinition);
+        tableRow.appendChild(professionTableDefinition);
+
+        fragment.appendChild(tableRow);
+    });
+
+    document.querySelector('.basic-table tbody').appendChild(fragment);
+</script>
+</body>
+</html>
