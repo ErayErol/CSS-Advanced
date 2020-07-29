@@ -17,21 +17,21 @@ html,
 }
 
 @each $header,
-$size in (h2: 36px, h3: 24px, h4: 20px, h5: 18px, ) {
+$size in (h2: 36px, h3: 30px, h4: 20px, h5: 18px, ) {
     #{$header} {
         font-size: $size;
     }
 }
 
 @each $header,
-$weight in (h2: 600, h3: bold, h4: 600, h5: bold, ) {
+$weight in (h2: 600, h3: 600, h4: 600, h5: bold, ) {
     #{$header} {
         font-weight: $weight;
     }
 }
 
 @each $header,
-$height in (h2: 44px, h3: 30px, h4: 24px, h5: 22px, ) {
+$height in (h2: 44px, h3: 36px, h4: 24px, h5: 22px, ) {
     #{$header} {
         line-height: $height;
     }
@@ -73,4 +73,11 @@ button {
 
 option {
     color: $grey-700;
+}
+
+label {
+    font-family: 'LatoWeb';
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
 }

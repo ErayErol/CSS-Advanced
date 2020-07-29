@@ -1,0 +1,35 @@
+.main__info-1 {
+  align-items: flex-start;
+}
+
+.main__info-1 article {
+  width: 552px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.main__info__section {
+  margin-left: 35px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main__info__section--first {
+  height: 110px;
+}
+
+.main__info__section p {
+  width: 488px;
+}
+
+.main__info__section__title {
+  color: #565656;
+  margin: 0;
+}
+
+.border-dotted-info {
+  border-right: 10px dotted #FFECB3;
+  height: 180px;
+}

@@ -5,18 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop</title>
+    <link rel="stylesheet" href="./styles/settings/settings-animations.css">
     <link rel="stylesheet" href="./styles/settings/settings-colors.css">
     <link rel="stylesheet" href="./styles/settings/settings-typography.css">
+
     <link rel="stylesheet" href="./styles/generic/generic-normalize.css">
-    <link rel="stylesheet" href="./styles/elements/elements-input-fields.css">
+
+    <link rel="stylesheet" href="./styles/elements/elements-p.css">
+
     <link rel="stylesheet" href="./styles/objects/objects-containers.css">
+
     <link rel="stylesheet" href="./styles/components/components-button.css">
-    <link rel="stylesheet" href="./styles/components/components-card.css">
-    <link rel="stylesheet" href="./styles/components/components-filter.css">
-    <link rel="stylesheet" href="./styles/components/components-footer.css">
     <link rel="stylesheet" href="./styles/components/components-header.css">
     <link rel="stylesheet" href="./styles/components/components-navigation.css">
+    <link rel="stylesheet" href="./styles/components/components-header-card.css">
+    <link rel="stylesheet" href="./styles/components/components-main-text-video.css">
+    <link rel="stylesheet" href="./styles/components/components-main-info-1.css">
     <link rel="stylesheet" href="./styles/components/components-program.css">
+    <link rel="stylesheet" href="./styles/components/components-footer.css">
 </head>
 
 <body>
@@ -39,8 +45,8 @@
                             <li><a href="">контакти</a></li>
                         </ul>
                     </section>
-                    <section class="navbar__search">
-                        <img src="./assets/icons/search.png" alt="Search">
+                    <section>
+                        <img class="navbar__search" src="./assets/icons/search.png" alt="Search">
                     </section>
                     <button class="navbar__button button button--small">
                         вход
@@ -49,145 +55,125 @@
             </div>
 
             <article class="header__info">
-                <section>
-                    <h2 class="header__title">Обучения</h2>
+                <section class="header-padding-top-bottom">
+                    <label class="header__label">
+                        Начинаещ
+                    </label>
                 </section>
                 <section>
-                    <p class="header__text">
-                        At dolor amet, enim sit augue donec mauris, ac. Eget leo quam et, morbi. Ut eu hac risus a
-                        suscipit
-                        cras sagittis viverra gravida. Lobortis amet imperdiet tincidunt quisque accumsan, porta tellus
-                        commodo at. Augue ullamcorper suspendisse. Sit morbi risus
-                    </p>
+                    <h2 class="header__title">Първи стъпки в програмирането - част 2</h2>
                 </section>
             </article>
+
+            <div class="header-card">
+                <article class="header-card__container page-margin">
+                    <div class="page-margin">
+                        <button class="header-card__button button">
+                            записване
+                        </button>
+                        <div class="border-right-dotted"></div>
+                        <label class="header-card__label header-card__money">
+                            <img class="header-card__label__img" src="./assets/icons/money 1.svg" alt="Money">
+                            <section class="header-card__label__section">
+                                <p class="p-information">цена</p>
+                                <p class="p-value">500 лв.</p>
+                            </section>
+                        </label>
+                        <div class="border-right-solid"></div>
+                        <label class="header-card__label">
+                            <img class="header-card__label__img" src="./assets/icons/people.svg" alt="People">
+                            <section class="header-card__label__section">
+                                <p class="p-information">подходящ за</p>
+                                <p class="p-value">1-6 клас</p>
+                            </section>
+                        </label>
+                        <div class="border-right-solid"></div>
+                        <label class="header-card__label header-card__calendar">
+                            <img class="header-card__label__img" src="./assets/icons/calendar-back.svg"
+                                alt="Calendar back">
+                            <img class="header-card__label__img header-card-calendar-front"
+                                src="./assets/icons/calendar-front.svg" alt="Calendar front">
+                            <section class="header-card__label__section">
+                                <p class="p-information">начало</p>
+                                <p class="p-value">16 май 2020</p>
+                            </section>
+                        </label>
+                        <div class="border-right-solid"></div>
+                        <label class="header-card__label header-card__location">
+                            <img class="header-card__label__img" src="./assets/icons/location.svg" alt="Location">
+                            <img class="header-card__location__img__circle"
+                                src="./assets/icons/circle-over-location.svg" alt="Circle">
+                            <section class="header-card__label__section">
+                                <p class="p-information">локация</p>
+                                <p class="p-value">гр. София</p>
+                            </section>
+                        </label>
+                    </div>
+                </article>
+            </div>
         </header>
 
         <main>
-            <div class="filter">
-                <article class="filter__container page-margin">
-                    <h4 class="filter__title">
-                        Филтър:
-                    </h4>
-                    <label class="filter__label filter__level">
-                        <img class="filter__label__img" src="./assets/icons/level.svg" alt="Level">
-                        <select name="level" id="level">
-                            <option value="level">Ниво</option>
-                            <option value="basic">Начинаещ</option>
-                            <option value="advanced">Напреднал</option>
-                        </select>
-                        <img class="filter__level__info" src="assets/icons/info.svg">
-                    </label>
-                    <label class="filter__label filter__location">
-                        <img class="filter__label__img" src="./assets/icons/location.svg" alt="Location">
-                        <img class="filter__location__img__circle" src="./assets/icons/circle-over-location.svg"
-                            alt="Circle">
-                        <select name="location" id="location">
-                            <option value="level">Локация</option>
-                            <option value="basic">София</option>
-                            <option value="advanced">Онлайн</option>
-                        </select>
-                    </label>
-                    <label class="filter__label">
-                        <img class="filter__label__img" src="./assets/icons/people.svg" alt="People">
-                        <select name="suitable-for" id="suitable-for">
-                            <option value="suitable-for">Подходящ за</option>
-                            <option value="basic">Начинаещ</option>
-                            <option value="advanced">Напреднал</option>
-                        </select>
-                    </label>
-                    <label class="filter__label">
-                        <img class="filter__label__img" src="./assets/icons/puzzle.svg" alt="Puzzle">
-                        <select name="type" id="type">
-                            <option>Вид</option>
-                            <option>Софтуер</option>
-                            <option>Хардуер</option>
-                        </select>
-                    </label>
+            <div class="main__text-video">
+                <article class="page-margin">
+                    <section class="main__text page-margin">
+                        <p>
+                            Това е втора част към онлайн обучението „Първи стъпки в програмирането”, който е първият и
+                            основополагащ онлайн модул по време на обучението по програмиране на SoftUni Kids. Той е
+                            насочен към изграждане на основни компетенции и умения, необходими на децата, за да
+                            продължат обучението
+                            си в следващи модули от програмата ни за малки програмисти. Първо ниво в направление
+                            софтуерни
+                            курсове се смята за преминато, след завършване и на двете части от курса и получен
+                            сертификат.
+                        </p>
+                        <p>
+                            По време на курса "Първи стъпки в програмирането - част 2", децата получават знания за
+                            видовете
+                            цикъл, събития, а също така се учат на активно общуване в група и работа в екип – принципи,
+                            които са заложени в цялостната програма на обучението по програмиране на SoftUni Kids.
+                        </p>
+                        <p>
+                            Курсът
+                            завършва със създаване на сценарии, които са измислени, съставени и програмирани от децата.
+                            В
+                            последния ден на занятията родителите са добре дошли в последния половин час, за да видят и
+                            презентацията на създадената от децата им програма! След завършване на втората част от
+                            курса,
+                            децата получават и своите сертификати за успешно преминато първо ниво „Първи стъпки в
+                            програмирането“.
+                        </p>
+                    </section>
+                    <section class="main__img">
+                        <img src="./assets/icons/video-back.svg" alt="Video before start picture">
+                        <img class="main__img-play" src="./assets/icons/video-play.svg" alt="Video play icon">
+                    </section>
                 </article>
             </div>
 
-            <div class="cards">
-                <article class="cards__container page-margin">
-                    <section class="card">
-                        <section class="card__header">
-                            <div class="card__level">Начинаещ</div>
-                            <h3 class="card__title">Първи стъпки в програмирането</h3>
-                        </section>
-                        <section class="card__main">
-                            <div class="card__item card__start">
-                                <img src="./assets/icons/play.svg" alt="Play icon">
-                                <span>16 май 2020</span>
-                            </div>
-                            <div class="card__item card__time">
-                                <img src="./assets/icons/time.svg" alt="Time icon">
-                                <span>4 седмици</span>
-                            </div>
-                            <div class="card__item card__user">
-                                <img src="./assets/icons/user.svg" alt="User icon">
-                                <span>1-3 клас</span>
-                            </div>
-                            <div class="card__item card__location">
-                                <img src="./assets/icons/location-icon.svg" alt="Location icon">
-                                <span>София - жк. Изток</span>
-                            </div>
-                        </section>
-                        <section class="card__footer page-margin">
-                            <p class="card__price">110 лв.</p>
-                            <button class="button button--card">към обучението</button>
-                        </section>
-                    </section>
-
-                    <section class="card">
-                        <section class="card__header card__header--green">
-                            <div class="card__level">Начинаещ</div>
-                            <h3 class="card__title">Първи стъпки в програмирането</h3>
-                        </section>
-                        <section class="card__main card__main__centered">
-                            <div class="card__item card__time">
-                                <img src="./assets/icons/time.svg" alt="Time icon">
-                                <span>4 седмици</span>
-                            </div>
-                            <div class="card__item card__user">
-                                <img src="./assets/icons/user.svg" alt="User icon">
-                                <span>2-3 клас</span>
-                            </div>
-                            <div class="card__item card__location">
-                                <img src="./assets/icons/location-icon.svg" alt="Location icon">
-                                <span>Онлайн</span>
-                            </div>
-                        </section>
-                        <section class="card__footer page-margin">
-                            <p class="card__price">110 лв.</p>
-                            <button class="button button--card">към обучението</button>
-                        </section>
-                    </section>
-
-                    <section class="card">
-                        <section class="card__header">
-                            <div class="card__level card__level--violet">средно-напреднал</div>
-                            <h3 class="card__title">Първи стъпки в програмирането</h3>
-                        </section>
-                        <section class="card__main card__main__centered">
-                            <div class="card__item card__time">
-                                <img src="./assets/icons/time.svg" alt="Time icon">
-                                <span>4 седмици</span>
-                            </div>
-                            <div class="card__item card__user">
-                                <img src="./assets/icons/user.svg" alt="User icon">
-                                <span>1-3 клас</span>
-                            </div>
-                            <div class="card__item card__location">
-                                <img src="./assets/icons/location-icon.svg" alt="Location icon">
-                                <span>гр. София, SoftUni - жк. Изток</span>
-                            </div>
-                        </section>
-                        <section class="card__footer page-margin">
-                            <p class="card__price">110 лв.</p>
-                            <button class="button button--card">към обучението</button>
-                        </section>
+            <div class="main__info-1 page-margin">
+                <article>
+                    <img src="./assets/icons/people.svg" alt="People">
+                    <section class="main__info__section main__info__section--first">
+                        <h3 class="main__info__section__title">За кого е подходящ?</h3>
+                        <p>Онлайн курсът е подходящ за напълно начинаещи: необходимо е децата да могат да четат и пишат
+                            и да имат достъп до компютър с интернет връзка.</p>
                     </section>
                 </article>
+                <div class="border-dotted-info"></div>
+                <article>
+                    <img src="./assets/icons/puzzle.svg" alt="Puzzle">
+                    <section class="main__info__section">
+                        <h3 class="main__info__section__title">Какво ще умее детето след курса?</h3>
+                        <p>При записване на второ дете (братче/сестриче) получавате 20% отстъпка от таксата за второто
+                            дете.
+                        </p>
+                        <p>
+                            Занятията стартират при сформиране на група.
+                        </p>
+                    </section>
+                </article>
+
             </div>
 
             <div class="program">
@@ -251,8 +237,8 @@
                 <section class="footer__img">
                     <img src="./assets/icons/pikachu-one-eye.svg" alt="Pikachu one eye">
                 </section>
-                <div class="footer__items">
-                    <section class="footer__ul position-relative">
+                <div class="footer__nav">
+                    <section class="footer__section position-relative">
                         <h5>Softuni Kids</h5>
                         <ul>
                             <li><a href="">Начало</a></li>
@@ -264,14 +250,14 @@
                             <li><a href="">Лични данни</a></li>
                         </ul>
                     </section>
-                    <section class="footer__ul">
+                    <section class="footer__section">
                         <h5>Всички обучения</h5>
                         <ul>
                             <li><a href="">Курсове</a></li>
                             <li><a href="">Събития</a></li>
                         </ul>
                     </section>
-                    <section class="footer__ul position-relative position-relative-second">
+                    <section class="footer__section position-relative position-relative-second">
                         <h5>Всички инициативи</h5>
                         <ul>
                             <li><a href="">SoftUni University</a></li>
@@ -281,7 +267,7 @@
                             <li><a href="">SoftUni Foundation</a></li>
                         </ul>
                     </section>
-                    <section class="footer__ul">
+                    <section class="footer__section">
                         <h5>Намери ни</h5>
                         <ul class="footer__social-media">
                             <li><a href=""><img src="./assets/icons/fb-icon.svg" alt="Fb icon"></i></a></li>

@@ -19,6 +19,7 @@
 
 .navbar__container .navbar__links a {
   text-decoration: none;
+  color: #565656;
 }
 
 .navbar__container .navbar__links a:hover {
@@ -32,9 +33,6 @@
 }
 
 .navbar__container .navbar__search {
-  margin-left: 60px;
-}
-
-.navbar__container .navbar__button {
-  margin-left: 18px;
+  margin-right: 32px;
+  margin-left: 44px;
 }

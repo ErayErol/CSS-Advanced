@@ -1,23 +1,30 @@
 .header {
-  background-color: #FF9100;
+  background-color: #44A9F8;
 }
 
-.header .header__info {
+.header__info {
   text-align: center;
   color: #FFFFFF;
-  height: 256px;
   display: flex;
   flex-direction: column;
+}
+
+.header__info .header-padding-top-bottom {
+  padding-top: 68px;
+  padding-bottom: 28px;
+}
+
+.header__info .header__title {
+  width: 644px;
+  height: 88px;
   margin: 0 auto;
 }
 
-.header .header__info .header__title {
-  margin: 0;
-  padding-top: 64px;
-  padding-bottom: 24px;
-}
-
-.header .header__info .header__text {
-  width: 850px;
+.header__info .header__label {
+  background-color: #FFC20A;
+  padding: 4px 8px;
   margin: 0 auto;
+  text-transform: uppercase;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
 }

@@ -1,25 +1,32 @@
 @import "../settings/settings-colors.scss";
 
 .header {
-    background-color: $secondary-color;
+    background-color: $blue-400;
 
-    .header__info {
+    &__info {
         text-align: center;
         color: $white-color;
-        height: 256px;
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
 
+        .header-padding-top-bottom{
+            padding-top: 68px;
+            padding-bottom: 28px;
+        }
+        
         .header__title {
-            margin: 0;
-            padding-top: 64px;
-            padding-bottom: 24px;
+            width: 644px;
+            height: 88px;
+            margin: 0 auto;
         }
 
-        .header__text {
-            width: 850px;
+        .header__label {
+            background-color: $secondary-500;
+            padding: 4px 8px;
             margin: 0 auto;
+            text-transform: uppercase;
+            border-radius: 4px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
         }
     }
 }

@@ -1,0 +1,32 @@
+@import "../settings/settings-colors.scss";
+
+.main__text-video {
+    margin-top: 153px;
+    margin-bottom: 98px;
+    // In figma margin-top is 96px, but I did header-card position: relative.
+    // margin: 96px is without header-card height. Header-card total height is 112 -> I take half 56 and added to 96 = 153px.
+}
+
+.main__text {
+    width: 739px;
+    height: 321px;
+    flex-direction: column;
+    margin: 0 !important;
+
+    & p {
+        color: $grey-700;
+    }
+}
+
+.main__img {
+    position: relative;
+    width: 440px;
+    height: 248px;
+
+    & .main__img-play {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

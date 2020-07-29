@@ -1,0 +1,81 @@
+.header-card {
+  position: relative;
+  top: 56px;
+}
+
+.header-card__container {
+  background-color: #FFFFFF;
+  height: 112px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  justify-content: flex-start;
+}
+
+.header-card__label__section {
+  display: flex;
+  flex-direction: column;
+  height: 52px;
+  justify-content: space-between;
+}
+
+.border-right-dotted {
+  border-right: 10px dotted black;
+  height: 12px;
+}
+
+.header-card__label {
+  display: flex;
+}
+
+.header-card__label__img {
+  margin-right: 24px;
+}
+
+.header-card__money {
+  margin-left: 80px;
+}
+
+.header-card__money__info {
+  margin-left: 10px;
+}
+
+.header-card__location {
+  position: relative;
+}
+
+.header-card__location__img__circle {
+  position: absolute;
+  left: 6px;
+  bottom: 22px;
+}
+
+.header-card__calendar {
+  position: relative;
+}
+
+.header-card-calendar-front {
+  position: absolute;
+  left: 3px;
+  bottom: 16px;
+}
+
+.p-information {
+  color: #565656;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.p-value {
+  color: #FF9100;
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.border-right-solid {
+  border-right: 2px solid #F1F1F1;
+  height: 24px;
+  margin: 44px 32px;
+}
