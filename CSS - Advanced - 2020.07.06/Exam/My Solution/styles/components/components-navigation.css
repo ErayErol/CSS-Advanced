@@ -17,6 +17,12 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 599px) {
+  .navbar__container .navbar__links li {
+    display: none;
+  }
+}
+
 .navbar__container .navbar__links a {
   text-decoration: none;
   color: #565656;
@@ -32,7 +38,40 @@
   margin-left: 16.34px;
 }
 
+@media (max-width: 599px) {
+  .navbar__container .navbar__logo .navbar__img-softuni-desktop {
+    display: none;
+  }
+}
+
+.navbar__container .navbar__logo .navbar__img-softuni-phone {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .navbar__container .navbar__logo .navbar__img-softuni-phone {
+    display: block;
+  }
+}
+
 .navbar__container .navbar__search {
   margin-right: 32px;
   margin-left: 44px;
+}
+
+@media (max-width: 599px) {
+  .navbar__container .navbar__search {
+    display: none;
+  }
+}
+
+.navbar__container .navbar__img-menu {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .navbar__container .navbar__img-menu {
+    display: block;
+    padding-left: 24px;
+  }
 }

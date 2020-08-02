@@ -1,27 +1,55 @@
+@import "../settings/settings-breakpoints.scss";
 @import "../settings/settings-colors.scss";
 
 .main__text-video {
     margin-top: 153px;
     margin-bottom: 98px;
-    // In figma margin-top is 96px, but I did header-card position: relative.
-    // margin: 96px is without header-card height. Header-card total height is 112 -> I take half 56 and added to 96 = 153px.
+    // In figma margin-top is 96px, but I did card position: relative.
+    // margin: 96px is without card height. card total height is 112 -> I take half 56 and added to 96 = 153px.
+
+    @include for-phone-only {
+        margin: 64px 0;
+    }
+}
+
+.main__text-video__container {
+    @include for-phone-only {
+        flex-direction: column;
+        width: 90%;
+    }
 }
 
 .main__text {
-    width: 739px;
-    height: 321px;
+    max-width: 739px;
+    min-height: 321px;
     flex-direction: column;
     margin: 0 !important;
 
     & p {
         color: $grey-700;
+
+        @include for-phone-only {
+            margin-bottom: 32px;
+        }
     }
 }
 
 .main__img {
     position: relative;
-    width: 440px;
-    height: 248px;
+
+    & .main__img-picture {
+        vertical-align: middle;
+        border-style: none;
+        width: 100%;
+        height: auto;
+        max-width: 440px;
+
+        @include for-phone-only { // refactoring because image is blurred
+            // height: 190px;
+            display: flex;
+            margin: 0 auto;
+        }
+    }
 
     & .main__img-play {
         position: absolute;

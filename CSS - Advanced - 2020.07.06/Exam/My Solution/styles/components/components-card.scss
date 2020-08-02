@@ -1,61 +1,80 @@
+@import "../settings/settings-breakpoints.scss";
 @import "../settings/settings-colors.scss";
 
-.header-card {
-    position: relative;
-    top: 56px;
+.card {
+    margin-top: -80px;
 }
 
-.header-card__container {
+.card__container {
     background-color: $white-color;
-    height: 112px;
+    min-height: 112px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
     border-radius: 12px;
     justify-content: flex-start;
+    width: 90%;
+    margin-top: 24px;
 }
 
-.header-card__label__section {
+.card__container-inside {
+    width: 100%;
+
+    @include for-phone-only {
+        flex-direction: column;
+        margin: 5% 5%;
+        align-items: flex-start;
+    }
+}
+
+.card__button{
+    @include for-phone-only {
+        margin: 0 auto;
+        padding: 16px 94px;
+        line-height: 20px;
+    }
+}
+
+.card__label__section {
     display: flex;
     flex-direction: column;
     height: 52px;
     justify-content: space-between;
-}   
-
-.border-right-dotted {
-    border-right: 10px dotted black;
-    height: 12px;
 }
 
-.header-card__label {
+.card__label {
     display: flex;
 }
 
-.header-card__label__img {
+.card__label__img {
     margin-right: 24px;
 }
 
-.header-card__money {
+.card__money {
     margin-left: 80px;
+
+    @include for-phone-only {
+        margin-left: 0;
+    }
 }
 
-.header-card__money__info {
+.card__money__info {
     margin-left: 10px;
 }
 
-.header-card__location {
+.card__location {
     position: relative;
 }
 
-.header-card__location__img__circle {
+.card__location__img__circle {
     position: absolute;
     left: 6px;
     bottom: 22px;
 }
 
-.header-card__calendar {
+.card__calendar {
     position: relative;
 }
 
-.header-card-calendar-front{
+.card-calendar-front {
     position: absolute;
     left: 3px;
     bottom: 16px;
@@ -74,10 +93,4 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 24px;
-}
-
-.border-right-solid {
-    border-right: 2px solid $grey-100;
-    height: 24px;
-    margin: 44px 32px;
 }

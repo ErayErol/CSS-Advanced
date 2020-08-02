@@ -28,3 +28,11 @@
         transform: scale(1.2);
     }
 }
+
+.program__img-to-do-list {
+    transition: transform 2s ease-out;
+
+    &:hover {
+        transform: rotate(360deg);
+    }
+}

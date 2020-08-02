@@ -8,19 +8,14 @@
 
 .footer__container {
   display: flex;
-}
-
-.footer__img {
-  position: relative;
-  bottom: 103px;
-  margin-right: 75px;
+  height: 260px;
 }
 
 .footer__nav {
   display: flex;
-  margin-bottom: 115px;
-  width: 100%;
+  margin-top: 30px;
   margin-left: 75px;
+  width: 100%;
 }
 
 .footer .position-relative {
@@ -39,13 +34,14 @@
 .footer__section h5 {
   width: 180px;
   height: 0px;
+  margin: 30px 0;
 }
 
 .footer__section ul {
   display: flex;
   flex-flow: column wrap;
   height: 170px;
-  margin-left: -50px;
+  margin-left: -12px;
 }
 
 .footer__section ul li {
@@ -71,7 +67,13 @@
   width: 180px;
 }
 
+.footer__img-pikachu {
+  position: relative;
+  bottom: 32px;
+  margin-right: 75px;
+}
+
 .footer section ul li:hover {
   cursor: pointer;
-  header-card: brightness(0) saturate(100%) invert(66%) sepia(56%) saturate(433%) hue-rotate(122deg) brightness(88%) contrast(87%);
+  filter: brightness(0) saturate(100%) invert(66%) sepia(56%) saturate(433%) hue-rotate(122deg) brightness(88%) contrast(87%);
 }

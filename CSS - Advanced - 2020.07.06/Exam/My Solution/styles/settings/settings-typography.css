@@ -98,7 +98,7 @@ option {
   color: #565656;
 }
 
-label {
+span {
   font-family: 'LatoWeb';
   font-weight: bold;
   font-size: 12px;

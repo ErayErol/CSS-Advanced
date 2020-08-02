@@ -32,6 +32,17 @@ Use a more readable tab size (opinionated).
 html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
+	box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*:after,
+*:before {
+    box-sizing: inherit;
 }
 
 /*

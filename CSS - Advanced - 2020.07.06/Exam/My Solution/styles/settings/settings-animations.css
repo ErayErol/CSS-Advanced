@@ -36,3 +36,11 @@
 .footer__section li:hover {
   transform: scale(1.2);
 }
+
+.program__img-to-do-list {
+  transition: transform 2s ease-out;
+}
+
+.program__img-to-do-list:hover {
+  transform: rotate(360deg);
+}

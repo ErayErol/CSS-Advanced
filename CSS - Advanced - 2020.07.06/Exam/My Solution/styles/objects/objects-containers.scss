@@ -1,11 +1,16 @@
+@import "../settings/settings-breakpoints.scss";
+
 .container {
-	width: 1440px;
+	width: 100%;
 	margin: 0 auto;
+
 }
 
-.page-margin{
+.page-margin {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 75px;
+	margin: 0 5%;
+
+	@include for-phone-only {}
 }

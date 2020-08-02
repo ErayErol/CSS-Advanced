@@ -1,5 +1,5 @@
 .container {
-  width: 1440px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -7,5 +7,5 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 75px;
+  margin: 0 5%;
 }

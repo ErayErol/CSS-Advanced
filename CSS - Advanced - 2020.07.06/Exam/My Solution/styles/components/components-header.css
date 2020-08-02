@@ -1,5 +1,6 @@
 .header {
   background-color: #44A9F8;
+  width: 100%;
 }
 
 .header__info {
@@ -7,6 +8,7 @@
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
+  height: 302px;
 }
 
 .header__info .header-padding-top-bottom {
@@ -14,13 +16,28 @@
   padding-bottom: 28px;
 }
 
-.header__info .header__title {
-  width: 644px;
-  height: 88px;
+.header__info .header__title-h2 {
+  width: 45%;
   margin: 0 auto;
 }
 
-.header__info .header__label {
+@media (max-width: 599px) {
+  .header__info .header__title-h2 {
+    display: none;
+  }
+}
+
+.header__info .header__title-h3 {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .header__info .header__title-h3 {
+    display: block;
+  }
+}
+
+.header__info .header__span {
   background-color: #FFC20A;
   padding: 4px 8px;
   margin: 0 auto;

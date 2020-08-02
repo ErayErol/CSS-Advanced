@@ -3,9 +3,22 @@
   margin-bottom: 98px;
 }
 
+@media (max-width: 599px) {
+  .main__text-video {
+    margin: 64px 0;
+  }
+}
+
+@media (max-width: 599px) {
+  .main__text-video__container {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
 .main__text {
-  width: 739px;
-  height: 321px;
+  max-width: 739px;
+  min-height: 321px;
   flex-direction: column;
   margin: 0 !important;
 }
@@ -14,10 +27,29 @@
   color: #565656;
 }
 
+@media (max-width: 599px) {
+  .main__text p {
+    margin-bottom: 32px;
+  }
+}
+
 .main__img {
   position: relative;
-  width: 440px;
-  height: 248px;
+}
+
+.main__img .main__img-picture {
+  vertical-align: middle;
+  border-style: none;
+  width: 100%;
+  height: auto;
+  max-width: 440px;
+}
+
+@media (max-width: 599px) {
+  .main__img .main__img-picture {
+    display: flex;
+    margin: 0 auto;
+  }
 }
 
 .main__img .main__img-play {

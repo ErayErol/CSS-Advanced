@@ -1,77 +1,66 @@
+.program {
+  background-color: #FFC20A;
+  height: 554px;
+}
+
 .program__container {
-  border-top: 10px dotted #DFF4F1;
-  margin: 127px 75px 96px 75px;
-}
-
-.program__container .program__info {
-  flex-direction: column;
-  text-align: center;
-  width: 850px;
-  margin: 0 auto;
-  margin-top: 96px;
-}
-
-.program__container .program__info .program__title {
-  color: #41BEAD;
-  margin: 0;
-}
-
-.program__container .program__info .program__text {
-  color: #565656;
-  margin: 0;
-  padding-top: 24px;
-}
-
-.program__container .program__cards {
-  margin-top: 64px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.program__container .program__cards .program__card {
-  width: 629px;
-  height: 259px;
-  background: #E3F3FD;
-  border: 4px solid #44A9F8;
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-  padding: 31px 0;
-}
-
-.program__container .program__cards .program__card .program__card__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  margin: 0 140px;
-}
-
-.program__container .program__cards .program__card .program__card__header .program__card__title {
-  color: #44A9F8;
-  font-weight: 600;
-  margin: 0;
-}
-
-.program__container .program__cards .program__card .program__card__header .program__card__title--green {
-  color: #00AF9B;
-}
-
-.program__container .program__cards .program__card .program__card__main {
-  margin: 0 auto;
-  width: 533px;
-  color: #565656;
-}
-
-.program__container .program__cards .program__card--green {
-  background: #DFF4F1;
-  border: 4px solid #00AF9B;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
   position: relative;
+  margin: 64px 60px;
 }
 
-.program__container .program__cards .program__card--green .circle-over-hardware-img {
+.program__title {
+  color: #565656;
+}
+
+.program__text {
+  color: #565656;
+  padding: 24px 0;
+  width: 675px;
+}
+
+.program__img-book {
   position: absolute;
-  left: 149px;
+  left: -60px;
+}
+
+.program__label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 676px;
+  height: 248px;
+}
+
+.program__label select {
+  border-radius: 6px;
+  height: 50px;
+  width: 100%;
+  padding: 14px 14px;
+  border: none;
+  color: #565656;
+  -webkit-appearance: none;
+}
+
+.program__label label::after {
+  content: '';
+  background: url("/assets/icons/arrow.svg") center no-repeat;
+  width: 12px;
+  height: 8px;
+  display: inline-block;
+  position: relative;
+  top: 180%;
+  left: 95%;
+}
+
+.program__img-to-do-list {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.program__label-for-loop h5 {
+  color: #565656;
 }

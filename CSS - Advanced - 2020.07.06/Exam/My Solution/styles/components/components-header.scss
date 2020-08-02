@@ -1,26 +1,40 @@
+@import "../settings/settings-breakpoints.scss";
 @import "../settings/settings-colors.scss";
 
 .header {
     background-color: $blue-400;
+    width: 100%;
 
     &__info {
         text-align: center;
         color: $white-color;
         display: flex;
         flex-direction: column;
+        height: 302px;
 
         .header-padding-top-bottom{
             padding-top: 68px;
             padding-bottom: 28px;
         }
         
-        .header__title {
-            width: 644px;
-            height: 88px;
+        .header__title-h2 {
+            width: 45%;
             margin: 0 auto;
+            
+            @include for-phone-only {
+                display: none;
+            }
         }
 
-        .header__label {
+        .header__title-h3{
+            display: none;
+
+            @include for-phone-only {
+                display: block;
+            }
+        }
+
+        .header__span {
             background-color: $secondary-500;
             padding: 4px 8px;
             margin: 0 auto;

@@ -1,3 +1,4 @@
+@import "../settings/settings-breakpoints.scss";
 @import "../settings/settings-colors.scss";
 
 .navbar {
@@ -14,8 +15,12 @@
                 list-style: none;
                 margin-left: 48px;
                 text-transform: uppercase;
+
+                @include for-phone-only {
+                    display: none;
+                }
             }
-    
+
             a {
                 text-decoration: none;
                 color: $grey-700;
@@ -26,15 +31,41 @@
                 }
             }
         }
-        
-        .navbar__logo {
+
+        .navbar__logo{
             flex: 1;
             margin-left: 16.34px;
+
+            .navbar__img-softuni-desktop{
+                @include for-phone-only {
+                    display: none;
+                }
+            }
+
+            .navbar__img-softuni-phone{
+                display: none;
+                @include for-phone-only {
+                    display: block;
+                }
+            }
         }
 
         .navbar__search {
             margin-right: 32px;
             margin-left: 44px;
+
+            @include for-phone-only {
+                display: none;
+            }
+        }
+
+        .navbar__img-menu {
+            display: none;
+
+            @include for-phone-only {
+                display: block;
+                padding-left: 24px;
+            }
         }
     }
 }
