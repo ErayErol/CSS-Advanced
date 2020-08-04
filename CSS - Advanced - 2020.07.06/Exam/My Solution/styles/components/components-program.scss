@@ -1,8 +1,9 @@
+@import "../settings/settings-breakpoints.scss";
 @import "../settings/settings-colors.scss";
 
 .program {
     background-color: $secondary-500;
-    height: 554px;
+    min-height: 554px;
 }
 
 .program__container {
@@ -11,29 +12,40 @@
     width: 100%;
     position: relative;
     margin: 64px 60px;
+
+    @include for-phone-only {
+        margin: 64px 0px;
+    }
 }
 
 .program__title {
     color: $grey-700;
+    @include for-phone-only {
+        margin-left: 60px;
+    }
 }
 
 .program__text {
     color: $grey-700;
     padding: 24px 0;
-    width: 675px;
+    max-width: 675px;
 }
 
 .program__img-book {
     position: absolute;
     left: -60px;
+
+    @include for-phone-only {
+        left: 0px;
+    }
 }
 
 .program__label {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 676px;
-    height: 248px;
+    max-width: 676px;
+    min-height: 248px;
 
     & select {
         border-radius: 6px;
@@ -53,14 +65,22 @@
     height: 8px;
     display: inline-block;
     position: relative;
-    top: 180%;
+    top: 30px;
     left: 95%;
+
+    @include for-phone-only {
+        left: 90%;
+    }
 }
 
 .program__img-to-do-list {
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @include for-phone-only {
+        display: none;
+    }
 }
 
 .program__label-for-loop h5 {

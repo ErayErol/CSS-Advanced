@@ -3,13 +3,13 @@
   margin-bottom: 98px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1199px) {
   .main__text-video {
     margin: 64px 0;
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1199px) {
   .main__text-video__container {
     flex-direction: column;
     width: 90%;
@@ -27,7 +27,7 @@
   color: #565656;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1199px) {
   .main__text p {
     margin-bottom: 32px;
   }
@@ -45,7 +45,7 @@
   max-width: 440px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1199px) {
   .main__img .main__img-picture {
     display: flex;
     margin: 0 auto;

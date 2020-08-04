@@ -16,7 +16,7 @@
   width: 100%;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1199px) {
   .card__container-inside {
     flex-direction: column;
     margin: 5% 5%;
@@ -24,7 +24,7 @@
   }
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1199px) {
   .card__button {
     margin: 0 auto;
     padding: 16px 94px;
@@ -51,7 +51,7 @@
   margin-left: 80px;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1199px) {
   .card__money {
     margin-left: 0;
   }

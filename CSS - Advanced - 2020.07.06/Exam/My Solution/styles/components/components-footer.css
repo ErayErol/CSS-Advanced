@@ -73,6 +73,12 @@
   margin-right: 75px;
 }
 
+@media (max-width: 1199px) {
+  .footer__img-pikachu {
+    display: none;
+  }
+}
+
 .footer section ul li:hover {
   cursor: pointer;
   filter: brightness(0) saturate(100%) invert(66%) sepia(56%) saturate(433%) hue-rotate(122deg) brightness(88%) contrast(87%);

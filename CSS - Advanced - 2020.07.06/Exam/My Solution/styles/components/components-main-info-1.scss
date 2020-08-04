@@ -17,25 +17,28 @@
 
 .main__info__section {
     margin-left: 5%;
-    height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    &--first{
-        height: 110px;
+    // &--first {
+    //     height: 110px;
 
-        @include for-phone-only {
-            height: 100%;
-        }
-    }
+    //     @include for-phone-only {
+    //         height: 100%;
+    //     }
+    // }
 
-    &--second{
-        height: 308px;
-    }
+    // &--second {
+    //     height: 308px;
 
-    &--third{
-        height: 332px;
+    //     @include for-phone-only {
+    //         height: auto !important;
+    //     }
+    // }
+
+    &--third {
+        // height: 332px;
 
         & a {
             color: $secondary-800;
@@ -43,14 +46,15 @@
     }
 
     & p {
-        width: 100%;
+        // width: 100%;
+        margin-top: 16px;
 
         @include for-phone-only {
-            margin-top: 16px;
+            margin-left: -48px;
         }
     }
 
-    & strong{
+    & strong {
         color: $grey-700;
     }
 }
@@ -58,12 +62,42 @@
 .main__info__section__title {
     color: $grey-700;
     margin: 0;
+
+    &--phone {
+        
+        @include for-phone-only {
+            text-indent: -9999px;
+            line-height: 0;
+            /* Collapse the original line */
+
+            &::after {
+                content: "Важно!";
+                text-indent: 0;
+                display: block;
+                line-height: initial;
+            }
+        }
+    }
 }
 
-.main__info-2{
+.main__info-2 {
     margin-top: 42px;
 
-    & .main__info-1 article{
-        width: 610px;
+    & .main__info-1 article {
+        max-width: 610px;
+    }
+}
+
+.main__info-1-img-puzzle {
+    @include for-phone-only {
+        display: none;
+    }
+}
+
+.main__info-1-img-bell {
+    display: none;
+
+    @include for-phone-only {
+        display: block;
     }
 }

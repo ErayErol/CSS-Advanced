@@ -15,6 +15,11 @@
 
 .border-dotted-info--second {
     height: 332px;
+
+    @include for-phone-only {
+        border-top: 10px dotted #FFECB3;
+        height: 10px;
+    }
 }
 
 .border-dotted-program {

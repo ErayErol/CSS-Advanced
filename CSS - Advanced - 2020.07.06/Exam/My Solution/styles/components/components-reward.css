@@ -2,6 +2,12 @@
   align-items: center;
 }
 
+@media (max-width: 1199px) {
+  .reward__container {
+    display: none;
+  }
+}
+
 .reward__box {
   height: 256px;
   width: 363px;

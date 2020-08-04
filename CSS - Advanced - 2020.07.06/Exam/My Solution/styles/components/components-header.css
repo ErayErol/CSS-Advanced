@@ -21,7 +21,7 @@
   margin: 0 auto;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1199px) {
   .header__info .header__title-h2 {
     display: none;
   }
@@ -31,7 +31,7 @@
   display: none;
 }
 
-@media (max-width: 599px) {
+@media (max-width: 1199px) {
   .header__info .header__title-h3 {
     display: block;
   }

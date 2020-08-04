@@ -1,7 +1,12 @@
+@import "../settings/settings-breakpoints.scss";
 @import "../settings/settings-colors.scss";
 
 .reward__container{
     align-items: center;
+
+    @include for-phone-only {
+        display: none;
+    }
 }
 
 .reward__box {

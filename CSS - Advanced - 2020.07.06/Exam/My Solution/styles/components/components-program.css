@@ -1,6 +1,6 @@
 .program {
   background-color: #FFC20A;
-  height: 554px;
+  min-height: 554px;
 }
 
 .program__container {
@@ -11,14 +11,26 @@
   margin: 64px 60px;
 }
 
+@media (max-width: 1199px) {
+  .program__container {
+    margin: 64px 0px;
+  }
+}
+
 .program__title {
   color: #565656;
+}
+
+@media (max-width: 1199px) {
+  .program__title {
+    margin-left: 60px;
+  }
 }
 
 .program__text {
   color: #565656;
   padding: 24px 0;
-  width: 675px;
+  max-width: 675px;
 }
 
 .program__img-book {
@@ -26,12 +38,18 @@
   left: -60px;
 }
 
+@media (max-width: 1199px) {
+  .program__img-book {
+    left: 0px;
+  }
+}
+
 .program__label {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 676px;
-  height: 248px;
+  max-width: 676px;
+  min-height: 248px;
 }
 
 .program__label select {
@@ -51,14 +69,26 @@
   height: 8px;
   display: inline-block;
   position: relative;
-  top: 180%;
+  top: 30px;
   left: 95%;
+}
+
+@media (max-width: 1199px) {
+  .program__label label::after {
+    left: 90%;
+  }
 }
 
 .program__img-to-do-list {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+
+@media (max-width: 1199px) {
+  .program__img-to-do-list {
+    display: none;
+  }
 }
 
 .program__label-for-loop h5 {
