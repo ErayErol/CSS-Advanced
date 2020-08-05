@@ -1,0 +1,18 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 125px);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    justify-content: center;
+    margin: 130px 0;
+}
+
+.box {
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 125px;
+}
+
+.box:nth-child(odd) {
+    background: black;
+}
