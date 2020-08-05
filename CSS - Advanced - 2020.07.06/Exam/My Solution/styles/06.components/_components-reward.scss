@@ -1,0 +1,31 @@
+@import "../01.settings/_settings-breakpoints.scss";
+@import "../01.settings/_settings-colors.scss";
+
+.reward__container{
+    align-items: center;
+
+    @include for-phone-only {
+        display: none;
+    }
+}
+
+.reward__box {
+    height: 256px;
+    width: 363px;
+    border-radius: 12px;
+    background-color: $grey-300;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & h5 {
+        font-weight: 500;
+        color: $grey-700;
+    }
+}
+
+.program__text--second{
+    width: 544px;
+    padding: 12px 0;
+}

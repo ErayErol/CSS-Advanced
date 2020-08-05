@@ -1,0 +1,14 @@
+@import "../01.settings/_settings-breakpoints.scss";
+
+.container {
+	width: 100%;
+	margin: 0 auto;
+
+}
+
+.page-margin {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 5%;
+}

@@ -1,0 +1,21 @@
+@import "./styles/01.settings/_settings-animations.scss";
+@import "./styles/01.settings/_settings-breakpoints.scss";
+@import "./styles/01.settings/_settings-colors.scss";
+
+@import "./styles/03.generic/_generic-normalize.scss";
+
+@import "./styles/04.elements/_elements-input-fields.scss";
+@import "./styles/04.elements/_elements-typography.scss";
+@import "./styles/04.elements/_elements-button.scss";
+
+@import "./styles/05.objects/_objects-containers.scss";
+
+@import "./styles/06.components/_components-border.scss";
+@import "./styles/06.components/_components-header.scss";
+@import "./styles/06.components/_components-navigation.scss";
+@import "./styles/06.components/_components-card.scss";
+@import "./styles/06.components/_components-main-text-video.scss";
+@import "./styles/06.components/_components-main-info-1.scss";
+@import "./styles/06.components/_components-program.scss";
+@import "./styles/06.components/_components-reward.scss";
+@import "./styles/06.components/_components-footer.scss";
