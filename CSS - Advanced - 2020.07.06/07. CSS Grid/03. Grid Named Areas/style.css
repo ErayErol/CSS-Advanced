@@ -16,7 +16,7 @@ footer {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-template-areas:
         "header header header header"

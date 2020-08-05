@@ -1,0 +1,45 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(7, 125px);
+    grid-template-rows: 600px;
+    justify-content: center;
+    align-items: end;
+}
+
+article {
+    background-color: black;
+    padding: 5px;
+}
+
+.a{
+    background-color: aquamarine;
+}
+
+.b{
+    background-color: yellow;
+    height: 10vh;
+}
+
+.c{
+    background-color: pink;
+    height: 5vh;
+}
+
+.d{
+    background-color: rgb(0, 231, 231);
+    height: 20vh;
+}
+
+.e{
+    background-color: rgb(202, 221, 118);
+    height: 32vh;
+}
+
+.f{
+    background-color: rgb(130, 0, 182);
+    height: 23vh;
+}
+
+.g{
+    background-color: rgb(255, 153, 0);
+}
