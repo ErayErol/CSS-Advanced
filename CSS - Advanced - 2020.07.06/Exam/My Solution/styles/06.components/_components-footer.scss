@@ -10,55 +10,52 @@
 
     @include for-phone-only {
         margin-top: 96px;
-        // max-height: 555px;
+        height: 600px;
     }
 
     &__container {
         display: flex;
         height: 260px;
+        padding-top: 30px;
 
         @include for-phone-only {
             height: auto;
             flex-flow: row wrap;
-            // max-height: 555px;
+            max-height: 555px;
+            padding-top: 0px;
         }
     }
 
     &__nav {
-        display: flex;
-        margin-top: 30px;
-        margin-left: 75px;
-        width: 100%;
-        max-height: 555px;
+        display: grid;
+        -ms-grid-columns: 256px 145px 167px 177px;
+        grid-template-columns: 280px 1fr 1fr 1fr;
+        column-gap: 60px;
+        margin-left: 78px;
 
         @include for-phone-only {
+            display: flex;
             flex-flow: column wrap;
             margin-left: 0px;
-        }
-    }
-
-    .position-relative {
-        position: relative;
-        right: 120px;
-
-        @include for-phone-only {
-            right: 0;
+            margin-top: 52px;
+            max-height: 555px;
+            width: 62%;
         }
     }
 
     .position-relative-second {
-        right: 8px;
 
         @include for-phone-only {
-            right: 0;
+            margin-bottom: 18px !important;
         }
     }
 
     &__section {
-        margin-left: 50px;
 
         @include for-phone-only {
             margin-left: 0;
+            width: 50%;
+            margin-bottom: 32px;
         }
     }
 
@@ -66,22 +63,27 @@
         width: 180px;
         height: 0px;
         margin: 30px 0;
+
+        @include for-phone-only {
+            height: auto;
+            margin: 0 0 16px 0 !important;
+        }
     }
 
     &__section ul {
         display: flex;
         flex-flow: column wrap;
         height: 170px;
-        margin-left: -12px;
 
-        @include for-phone-only{
+        @include for-phone-only {
             height: auto;
+            width: 150px;
         }
     }
 
     &__section ul li {
         list-style: none;
-        padding: 7px 12px;
+        padding: 7px 0px;
     }
 
     &__section ul li a {
@@ -99,20 +101,25 @@
 
     &__text {
         color: $grey-500;
-        width: 180px;
+        width: 100%;
 
         @include for-phone-only {
+            position: absolute;
             width: 307px;
-            border-top: 2px solid;
+            border-top: 2px solid #696969;
             text-align: center;
+            padding-top: 32px;
+            bottom: 30px;
+            left: 22px;
+            width: 90%;
+
         }
     }
 }
 
 .footer__img-pikachu {
     position: relative;
-    bottom: 32px;
-    margin-right: 75px;
+    bottom: 47px;
 
     @include for-phone-only {
         display: none;
@@ -123,4 +130,14 @@
     cursor: pointer;
     // color: $primary-300;
     filter: brightness(0) saturate(100%) invert(66%) sepia(56%) saturate(433%) hue-rotate(122deg) brightness(88%) contrast(87%);
+}
+
+.footer__title-social-media {
+    @include for-phone-only {
+        display: none;
+    }
+}
+
+.fa-instagram {
+    margin-left: 30px;
 }

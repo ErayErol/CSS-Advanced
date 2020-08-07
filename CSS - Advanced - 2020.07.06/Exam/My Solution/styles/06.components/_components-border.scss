@@ -55,7 +55,6 @@
     width: 20px;
     margin-left: 5%;
     background: radial-gradient(circle 12px, transparent, transparent 40%, #C4C4C4 60%, #fff 60%, #fff 100%) 40px 12px/20px 22px repeat;
-    // background: radial-gradient(circle 12px, transparent, transparent 40%, #C4C4C4 60%, #fff 60%, #fff 100%) 47px 0px/20px 20px repeat-x;
 
     @include for-phone-only {
         display: none;
