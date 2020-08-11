@@ -1,0 +1,26 @@
+@import "../01.settings/_settings-breakpoints.scss";
+@import "../01.settings/_settings-colors.scss";
+
+.lecturers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    margin: 0 10%;
+    text-align: center;
+    margin-top: 96px;
+    margin-bottom: 128px;
+    row-gap: 40px;
+
+    @include for-phone-only {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        margin-top: 64px;
+        margin-bottom: 96px;
+
+        @for $i from 5 through 24 {
+            & article:nth-child(#{$i}) {
+                display: none;
+            }
+        }
+    }
+}

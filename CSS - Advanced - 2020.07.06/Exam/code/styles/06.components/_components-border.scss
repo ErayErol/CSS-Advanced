@@ -1,0 +1,27 @@
+.c-home-main__info-1-border {
+    border-top: 10px dotted #FFECB3;
+    width: 100%;
+    height: 10px;
+    align-self: center;
+
+    @include for-tablet-landscape-up {
+        border-right: 10px dotted #FFECB3;
+        width: 10px;
+        height: 100%;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        /* align-self: center; */
+        justify-self: center;
+    }
+}
+
+.c-home-main__program-border {
+    border-bottom: 10px dotted white;
+    position: relative;
+    top: -5px;
+    margin: 0 5px;
+
+    &--bottom {
+        top: -85px;
+    }
+}

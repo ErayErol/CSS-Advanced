@@ -1,0 +1,132 @@
+@charset "UTF-8";
+.main__info-1 {
+  align-items: flex-start;
+}
+
+@media (max-width: 1399px) {
+  .main__info-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.main__info-1 article {
+  max-width: 552px;
+  display: flex;
+  align-items: flex-start;
+}
+
+@media (max-width: 1399px) {
+  .main__info-1--page-2 article {
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 64px;
+    max-width: initial;
+  }
+}
+
+.main__info__section {
+  margin-left: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (max-width: 1399px) {
+  .main__info__section--page-2 {
+    margin-left: 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1399px) {
+  .main__info__section--page-2 p {
+    margin-left: 0 !important;
+  }
+}
+
+.main__info__section--lecturers {
+  margin-left: 0;
+}
+
+.main__info__section--lecturers h3 {
+  margin-top: 24px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.main__info__section--third a {
+  color: #FF9100;
+}
+
+.main__info__section p {
+  margin-top: 16px;
+}
+
+@media (max-width: 1399px) {
+  .main__info__section p {
+    margin-left: -48px;
+  }
+}
+
+.main__info__section strong {
+  color: #565656;
+}
+
+.main__info__section__title {
+  color: #565656;
+  margin: 0;
+}
+
+.main__info__section__title--page-2 {
+  color: #41BEAD;
+}
+
+@media (max-width: 1399px) {
+  .main__info__section__title--page-2 {
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .main__info__section__title--phone {
+    text-indent: -9999px;
+    line-height: 0;
+    /* Collapse the original line */
+  }
+  .main__info__section__title--phone::after {
+    content: "Важно!";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+  }
+}
+
+.main__info-2 {
+  margin-top: 42px;
+}
+
+.main__info-2 .main__info-1 article {
+  max-width: 610px;
+}
+
+@media (max-width: 1399px) {
+  .main__info-1-img-puzzle {
+    display: none;
+  }
+}
+
+.main__info-1-img-bell {
+  display: none;
+}
+
+@media (max-width: 1399px) {
+  .main__info-1-img-bell {
+    display: block;
+  }
+}
