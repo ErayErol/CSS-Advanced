@@ -1,7 +1,7 @@
 # <a href="https://softuni.bg"><p align="center">
  <p align="center"><img src="http://spaceappschallengebulgaria.eu/sites/default/files/softuni.png" width = 250 /></p><p></a>
 
-# <a href="https://softuni.bg/trainings/2983/html-and-css-may-2020/internal"><p align="center">:book:CSS Advanced<p></a>
+# <a href="https://softuni.bg/trainings/3042/css-advanced-july-2020"><p align="center">:book:CSS Advanced<p></a>
 
 # <a href="https://softuni.bg/certificates/details/84903/376c266d"><p align="center"> :clipboard:Certificate<p></a>
 
