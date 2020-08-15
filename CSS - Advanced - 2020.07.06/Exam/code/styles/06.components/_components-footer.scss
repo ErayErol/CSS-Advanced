@@ -1,10 +1,40 @@
 .c-footer {
     border-top: 12px solid $grey-500;
     background-color: $grey-700;
-    margin-top: 90px;
     height: 100%;
 
-    @include for-tablet-landscape-up {
+    &--page-1 {
+        margin-top: 200px;
+
+        @include for-tablet-landscape-up{
+            margin-top: 240px;
+        }
+
+        @include for-desktop-up{
+            margin-top: 280px;
+        }
+    }
+
+    &--page-2 {
+        margin-top: 0px;
+    }
+
+    &--page-3 {
+        margin-top: 34%;
+
+        @include for-tablet-portrait-up{
+            margin-top: 24%;
+        }
+
+        @include for-tablet-landscape-up{
+            margin-top: 90px;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
     }
 
     .o-page-content-wrapper {
@@ -13,11 +43,10 @@
         grid-template-rows: 1fr;
 
         @include for-tablet-landscape-up {
-            grid-template-columns: 30% 1fr;
+            grid-template-columns: 25% 1fr;
             max-height: 100%;
             grid-template-rows: 70%;
         }
-
     }
 
     &__img {
@@ -34,13 +63,25 @@
 
         @include for-tablet-landscape-up {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-columns: min-content;
             grid-template-rows: 1fr;
             row-gap: 32px;
             margin-top: 50px;
+            column-gap: 50px;
         }
 
         &__section {
+
+            &--first {
+                @include for-desktop-up {
+                    ul {
+                        display: flex;
+                        flex-flow: column wrap;
+                        height: 170px;
+                        width: 280px;
+                    }
+                }
+            }
 
             &--second {
                 grid-row-start: 3;
@@ -53,6 +94,13 @@
                     grid-row-end: 1;
                     grid-column-start: 2;
                     grid-column-end: 2;
+                }
+            }
+
+            &--third {
+                @include for-tablet-landscape-up {
+                    grid-column: 3/4;
+                    grid-row: 1/1;
                 }
             }
 
@@ -70,7 +118,7 @@
                     grid-column-end: 4;
                 }
 
-                & div {
+                & div ul {
                     display: grid;
                     grid-template-rows: 1fr;
                     grid-template-columns: min-content min-content;
@@ -81,6 +129,7 @@
             &--fifth {
                 border-top: 2px solid $grey-600;
                 grid-column: 1/3;
+                grid-row: 4/4;
                 text-align: center;
                 align-self: center;
                 color: $grey-500;
@@ -88,7 +137,7 @@
 
                 @include for-tablet-landscape-up {
                     border-top: none;
-                    grid-column: 4/5;
+                    grid-column: 4/4;
                     grid-row: 1/1;
                     text-align: start;
                 }
@@ -98,7 +147,7 @@
                 color: white;
             }
 
-            li {
+            ul li {
                 list-style: none;
                 padding-top: 12px;
 
@@ -106,11 +155,9 @@
                     text-decoration: none;
                     color: $grey-200;
                     font-weight: 300;
+                    font-size: 16px;
                 }
             }
         }
     }
-
-
-
 }
