@@ -13,6 +13,10 @@
   </th>
   <th>
    <p align="center">
+    :books:Lection
+  </th>
+  <th>
+   <p align="center">
    :pencil:Exercise
   </th>
 </tr>
@@ -39,12 +43,12 @@
     :two:
   </td>
   <th>
-     HTML Structure
+     CSS Architecture - BEM
   </th>
   <td> 
    <p align="center">
          <a 
-         href="https://github.com/ErayErol/HTML-CSS/tree/master/HTML-CSS%20-%202020.05.16/02.%20HTML%20Structure">✅
+         href="https://github.com/ErayErol/CSS-Advanced/tree/master/CSS%20-%20Advanced%20-%202020.07.06/02.%20CSS%20Architecture%20-%20BEM">✅
          </a>
   </td>
 </tr>
@@ -55,12 +59,12 @@
     :three:
   </td>
   <th>
-     CSS and Typography
+     Workshop
   </th>
   <td> 
    <p align="center">
          <a 
-         href="https://github.com/ErayErol/HTML-CSS/tree/master/HTML-CSS%20-%202020.05.16/03.%20CSS%20and%20Typography">✅
+         href="https://github.com/ErayErol/CSS-Advanced/tree/master/CSS%20-%20Advanced%20-%202020.07.06/03.%20Workshop">✅
          </a>
   </td>
 </tr>
@@ -71,12 +75,12 @@
     :four:
   </td>
   <th>
-     CSS Box Model
+     SASS
   </th>
   <td> 
    <p align="center">
          <a 
-         href="https://github.com/ErayErol/HTML-CSS/tree/master/HTML-CSS%20-%202020.05.16/04.%20CSS%20Box%20Model">✅
+         href="https://github.com/ErayErol/CSS-Advanced/tree/master/CSS%20-%20Advanced%20-%202020.07.06/04.%20SASS">✅
          </a>
   </td>
 </tr>
@@ -87,12 +91,12 @@
     :five:
   </td>
   <th>
-     Position & Float
+     CSS Transitions, Animations and Transformations
   </th>
   <td> 
    <p align="center">
          <a 
-         href="https://github.com/ErayErol/HTML-CSS/tree/master/HTML-CSS%20-%202020.05.16/05.%20Position%20%26%20Float">✅
+         href="https://github.com/ErayErol/CSS-Advanced/tree/master/CSS%20-%20Advanced%20-%202020.07.06/05.%20CSS%20Transitions%2C%20Animations%20and%20Transformations">✅
          </a>
   </td>
 </tr>
@@ -103,12 +107,44 @@
     :six:
   </td>
   <th>
-     Flexbox
+     Workshop
   </th>
   <td> 
    <p align="center">
          <a 
-         href="https://github.com/ErayErol/HTML-CSS/tree/master/HTML-CSS%20-%202020.05.16/06.%20Flexbox">✅
+         href="">✅
+         </a>
+  </td>
+</tr>
+
+<tr>
+  <td>
+   <p align="center">
+    :seven:
+  </td>
+  <th>
+     Grid
+  </th>
+  <td> 
+   <p align="center">
+         <a 
+         href="">✅
+         </a>
+  </td>
+</tr>
+
+<tr>
+  <td>
+   <p align="center">
+    :eight:
+  </td>
+  <th>
+     Building Layout
+  </th>
+  <td> 
+   <p align="center">
+         <a 
+         href="">✅
          </a>
   </td>
 </tr>
