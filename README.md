@@ -3,7 +3,7 @@
 
 # <a href="https://softuni.bg/trainings/3042/css-advanced-july-2020"><p align="center">:book:CSS Advanced<p></a>
 
-# <a href="https://softuni.bg/certificates/details/84903/376c266d"><p align="center"> :clipboard:Certificate<p></a>
+# <a href="https://softuni.bg/certificates/details/87631/d8b5539d"><p align="center"> :clipboard:Certificate<p></a>
 
 <table>
 <tr>
